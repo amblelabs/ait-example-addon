@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ait-example-addon",
+  "version": "${version}",
+  "name": "Example AIT Addon",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/pavatus/ait-example-addon"
+  },
+  "license": "MIT",
+  "icon": "assets/ait-example-addon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.aitexampleaddon.client.ExampleAddonModClient"
+    ],
+    "main": [
+      "com.aitexampleaddon.ExampleAddonMod"
+    ],
+    "ait-main": [
+      "com.aitexampleaddon.ait.ExampleAITAddon"
+    ]
+  },
+  "mixins": [
+    "ait-example-addon.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "ait": ">=1.1.0"
+  }
+}
