@@ -1,6 +1,6 @@
 package com.aitexampleaddon.ait;
 
-import loqor.ait.api.AITModInitializer;
+import dev.amble.ait.api.AITModInitializer;
 
 public class ExampleAITAddon implements AITModInitializer {
 
